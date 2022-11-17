@@ -29,20 +29,11 @@ a{
   text-decoration: none;
   font-size: 60px;
   font-weight: 500;
+  display: inline-block;
 }
 
 #img-circle{
   border-radius: 60%;
-}
-
-div{
-  background-color: darkgray;
-  width: 700px;
-  margin: 20px auto;
-  padding: 32px;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  text-align: center;
 }
 
 button{
@@ -56,40 +47,25 @@ a:hover{
 }
 
 .container {
-  margin: 40 auto;
+  display: inline-block;
+  width: 900px;
+  vertical-align: middle;
+  padding: 30px;
+  margin: 30px auto;
 }
-
-@media (max-width: 960px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 700px;
-  }
-}
-
-@media (max-width: 720px) {
-  /* Pour un écran < 720px, cette classe CSS s'applique */
-  .container {
-    width: 500px;
-  }
-}
-
-@media (max-width: 540px) {
-  /* Pour un écran < 540px, cette classe CSS s'applique */
-  .container {
-    width: 300px;
-  }
-}
-
-.card-white {
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  margin: 20px 0px;
+.card {
   text-align: center;
+  background:#F1DECE;;
+  border: 1px solid lightgrey;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin-top: 50px;
 }
 
 .list-inline {
+  display: inline;
   list-style: none;
   padding-left: 0px;
 }
@@ -98,6 +74,7 @@ a:hover{
   display: inline;
   padding: 10px;
 }
+
 .list-inline i {
   font-size: 50px;
   color: rgb(60, 90, 60);
@@ -120,4 +97,25 @@ a:hover{
 
 #introduction p {
   margin-bottom: 40px;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
 }
